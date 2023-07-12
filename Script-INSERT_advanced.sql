@@ -21,8 +21,8 @@ VALUES 	('That is the Spirit', 2021),
 		('Son, I Loved You at Your Darkest', 2004),
 		('Reaper', 2019),
 		('Svartir Sandar', 2006),
-		('Scum', 2002)
-		('Never Let Me Go', '2020');
+		('Scum', 2002),
+		('Never Let Me Go', 2020);
 		
 --Ввод данных по жанрам:
 
