@@ -16,10 +16,10 @@ VALUES 	('Bring Me the Horizon'),
 INSERT INTO Albums (album_name, album_year)
 VALUES 	('That is the Spirit', 2021),
 		('Hvis Lyset Tar Oss', 2001),
-		('The classic symptoms of broken spirit', 2023),
+		('The classic symptoms of broken spirit', 2020),
 		('Without You I am Nothing', 1998),
 		('Son, I Loved You at Your Darkest', 2004),
-		('Reaper', 2018),
+		('Reaper', 2019),
 		('Svartir Sandar', 2006),
 		('Scum', 2002);
 		
@@ -81,7 +81,11 @@ VALUES 	(1, 1),
 		(2, 2),
 		(3, 8),
 		(4, 5),
-		(5, 7);	
+		(5, 7),
+		(5, 2),
+		(4, 8),
+		(3, 5),
+		(4, 4);	
 		
 INSERT INTO Collections_songs (collection_id, song_id)
 VALUES 	(8, 1),
