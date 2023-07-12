@@ -15,10 +15,21 @@ JOIN Albums a ON a.id = s.album_id
 GROUP BY album_name;
 
 --4
-SELECT DISTINCT author_name FROM Authors a
-JOIN Authors_albums aa  ON a.id = aa.author_id
-JOIN Albums alb ON alb.id = aa.album_id
-WHERE album_year != 2020;
+--SELECT DISTINCT author_name FROM Authors a
+--JOIN Authors_albums aa  ON a.id = aa.author_id
+--JOIN Albums alb ON alb.id = aa.album_id
+--WHERE album_year != 2020;
+
+-- Доработка: "Данный запрос реализуется через вложенный запрос, 
+--где получаем исполнителей, которые выпустили (!) альбомы в 20-м году, 
+--а потом выводим тех, кто не(!) попадает в этот список." 
+
+SELECT DISTINCT author_name FROM Authors a /* Получаем имена исполнителей */
+WHERE author_name NOT IN ( /* Из таблицы исполнителей *//* Где имя исполнителя не входит в вложенную выборку */
+    SELECT author_name FROM Authors a /* Получаем имена исполнителей */ /* Из таблицы исполнителей */
+    JOIN Authors_albums aa ON a.id = aa.author_id /* Объединяем с промежуточной таблицей */
+    JOIN Albums alb ON alb.id = aa.album_id /* Объединяем с таблицей альбомов */
+    WHERE album_year = '2020');
 
 --5
 SELECT collection_name FROM Authors a

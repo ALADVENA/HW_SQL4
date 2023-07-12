@@ -21,7 +21,8 @@ VALUES 	('That is the Spirit', 2021),
 		('Son, I Loved You at Your Darkest', 2004),
 		('Reaper', 2019),
 		('Svartir Sandar', 2006),
-		('Scum', 2002);
+		('Scum', 2002)
+		('Never Let Me Go', 2020);
 		
 --Ввод данных по жанрам:
 
@@ -49,7 +50,8 @@ VALUES 	(1, 'Throne', '00:03:07'),
 		(7, 'Fjara', '00:04:29'),
 		(8, 'Scum', '00:03:08'),
 		(8, 'You Suffer', '00:05:01'),
-		(2, 'Det Som en Gang Var', '00:03:38');
+		(2, 'Det Som en Gang Var', '00:03:38'),
+		(9, 'Happy Birthday in the Sky', '00:05:09');
 		
 --Ввод данных по альбомам:
 
@@ -73,7 +75,8 @@ VALUES 	(1, 1),
 		(5, 6),
 		(6, 7),
 		(7, 8),
-		(8, 3);
+		(8, 3),
+		(3, 9);
 
 
 INSERT INTO Genres_authors (genre_id, author_id)
